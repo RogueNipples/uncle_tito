@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /Magic Conch?/;
+      botRegex = /Tito?/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -21,124 +21,176 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  var randomnum = Math.floor((Math.random() * 52) + 1);
-  if (randomnum > 50)
+  var randomnum = Math.floor((Math.random() * 38) + 1);
+  if (randomnum > 37)
     {
-        botResponse = "Absolutely";
-    }
-    else if (randomnum > 46)
-    {
-        botResponse = "http://ih1.redbubble.net/image.214499180.8793/flat,800x800,075,f.jpg";
-    }
-    else if (randomnum > 48)
-    {
-        botResponse = "Kill yourself";
-    }
-    else if (randomnum > 46)
-    {
-        botResponse = "http://gif-finder.com/wp-content/uploads/2015/08/Dwight-YesYes.gif";
-    }
-    else if (randomnum > 44)
-    {
-        botResponse = "( ͡° ͜ʖ ͡°)";
-    }
-    else if (randomnum > 42)
-    {
-        botResponse = "What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You’re fucking dead, kiddo.";
-    }
-    else if (randomnum > 40)
-    {
-        botResponse = "https://tctechcrunch2011.files.wordpress.com/2011/05/thumbs.png";
-    }
-    else if (randomnum > 38)
-    {
-        botResponse = "http://www.reactiongifs.us/wp-content/uploads/2013/08/shaking_head_breaking_bad.gif";
+        botResponse = "You can paint the coconut shell, but you can’t change the milk inside.";
     }
     else if (randomnum > 36)
     {
-        botResponse = "Nope";
+        botResponse = "A wise man cherishes today because tomorrow he could meet the fiery end at the bottom of a volcano.";
+    }
+    else if (randomnum > 36)
+    {
+        botResponse = "He who misses the tide, must wait for the next moon.";
+    }
+    else if (randomnum > 36)
+    {
+        botResponse = "Man who tries to predict when volcano will blow, is usually toast by next day.";
+    }
+    else if (randomnum > 36)
+    {
+        botResponse = "Just ’cause you’re riding the high tide, doesn’t mean you’ve chosen the right course.";
+    }
+    else if (randomnum > 37)
+    {
+        botResponse = "If there is anyone in the village who can understand why the new chief made the mistake of planting coconuts near the volcano, it’s the old chief.";
+    }
+    else if (randomnum > 36)
+    {
+        botResponse = "Inside every rotten pineapple, there may be a pearl.";
+    }
+    else if (randomnum > 35)
+    {
+        botResponse = "A coconut is a hard nut to crack. Then again, it takes something hard to crack the coconut.";
     }
     else if (randomnum > 34)
     {
-        botResponse = "Yeah sure whatever";
+        botResponse = "Every wave has to come to the shore at some point.";
+    }
+    else if (randomnum > 33)
+    {
+        botResponse = "Some coconuts have thicker shells than others.";
     }
     else if (randomnum > 32)
     {
-        botResponse = "Taxation is theft";
+        botResponse = "Never drink the milk from a coconut you found in the dark.";
     }
     else if (randomnum > 31)
     {
-        botResponse = "New phone who dis";
+        botResponse = "Sometimes a pineapple wishes it was a coconut.";
     }
     else if (randomnum > 30)
     {
-        botResponse = "Jet fuel can't melt steel beams";
+        botResponse = "He who is on the canoe is responsible for the journey, whether he has a paddle or not.";
+    }
+    else if (randomnum > 29)
+    {
+        botResponse = "He who rubs his enemy’s face in the sand, gets buried in the sand with him.";
     }
     else if (randomnum > 28)
     {
-        botResponse = "Bush did 9/11";
+        botResponse = "The mouth cannot speak what the mind does not leak.";
+    }
+    else if (randomnum > 27)
+    {
+        botResponse = "No common brudda ever knows the pain of the flower as it grows.";
     }
     else if (randomnum > 26)
     {
-        botResponse = "https://nacidaeldocedejulio.files.wordpress.com/2014/05/hahahaha-no-107105163314.png";
+        botResponse = "When surfers don’t ride, potatoes ain’t fried.";
+    }
+    else if (randomnum > 25)
+    {
+        botResponse = "The Hawaiian ancients had an expression for someone who competes against his best friend and business partner: real bonehead.";
     }
     else if (randomnum > 24)
     {
-        botResponse = "http://www.reactiongifs.us/wp-content/uploads/2014/07/yes_snoop_dogg.gif";
+        botResponse = "Just because you can afford the modern longboard, doesn’t mean you can honor the moving water.";
+    }
+    else if (randomnum > 23)
+    {
+        botResponse = "Never provoke the wrath of a ten year old.";
     }
     else if (randomnum > 22)
     {
-        botResponse = "http://i2.kym-cdn.com/entries/icons/original/000/016/362/tumblr_nb7jgq9kcR1slfxluo1_1280.jpg";
+        botResponse = "If you’re walking on a beach, and you step on a crab, even if you didn’t mean to, you should go back and apologize. After all, that crab could be in your soup later on.";
+    }
+    else if (randomnum > 21)
+    {
+        botResponse = "The coconut, though hard and brown, in the spring gives milk to the sand, after being kissed by the green water.";
     }
     else if (randomnum > 20)
     {
-        botResponse = "Nein";
+        botResponse = "The most important races are won in the ocean of the soul.";
+    }
+    else if (randomnum > 19)
+    {
+        botResponse = "Sometimes, the bird sings, sometimes it coughs up a worm.";
     }
     else if (randomnum > 18)
     {
-        botResponse = "By all means";
+        botResponse = "Sometimes, it’s best to trust the weight of experience, and I’ve got plenty of experience!";
+    }
+    else if (randomnum > 17)
+    {
+        botResponse = "Fly the kite; it must not fly you.";
     }
     else if (randomnum > 16)
     {
-        botResponse = "Probably";
+        botResponse = "There is no I in the word team.";
+    }
+    else if (randomnum > 15)
+    {
+        botResponse = "Don’t do the crime, if you can’t do the time.";
     }
     else if (randomnum > 14)
     {
-        botResponse = "Yes";
+        botResponse = "The bird that flies alone, is the goose that gets cooked.";
+    }
+    else if (randomnum > 13)
+    {
+        botResponse = "The coconut is always sweeter on the palm tree you can’t reach.";
     }
     else if (randomnum > 12)
     {
-        botResponse = "Sure, why not";
+        botResponse = "The seagull that flies a crooked path, has a tough time returning home.";
+    }
+    else if (randomnum > 11)
+    {
+        botResponse = "When you’re itching for the waves, the only lotion is the ocean.";
     }
     else if (randomnum > 10)
     {
-        botResponse = "Harambe forbids it";
+        botResponse = "When the sea turtle retreats into its hardened shell, just give him time – he’ll show up, especially when there’s teriyaki barbecue chicken.";
+    }
+    else if (randomnum > 9)
+    {
+        botResponse = "He who carves himself in stone, has rocks in his head.";
     }
     else if (randomnum > 8)
     {
-        botResponse = "Yee";
+        botResponse = "Blood is thicker than water, but not as refreshing.";
+    }
+    else if (randomnum > 7)
+    {
+        botResponse = "The sands of the beach must change with each new wind.";
     }
     else if (randomnum > 6)
     {
-        botResponse = "No";
+        botResponse = "The pelican can fly as high as the stars, if she believes she can.";
+    }
+    else if (randomnum > 5)
+    {
+        botResponse = "You can’t compare pineapples and coconuts.";
     }
     else if (randomnum > 4)
     {
-        botResponse = "I don't think so";
+        botResponse = "The village of a chief who won’t forget the past, may as well forget about the future.";
     }
     else if (randomnum > 3)
     {
-        botResponse = "Negative";
+        botResponse = "The green pineapple never falls from the tree by accident.";
     }
     else if (randomnum > 2)
     {
-        botResponse = "No, and you should feel bad for asking";
+        botResponse = "The sun cannot drink its favorite pineapple in the field.";
     }
     else if (randomnum > 1)
     {
-        botResponse = "No way";
+        botResponse = "Man who’s always watching for fallen coconut ends up stubbing toe.";
     }
-    else botResponse = "You're an idiot";
+    else botResponse = "A crashing wave may thrill the breath, but can’t replace the ocean depth.";
 
 
   options = {
