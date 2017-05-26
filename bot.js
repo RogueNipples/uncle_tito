@@ -52,7 +52,7 @@ function postMessage() {
     }
     else if (randomnum > 35)
     {
-        botResponse = "A coconut is a hard nut to crack. Then again, it takes something hard to crack the coconut.";
+        botResponse = "A coconut is a hard nut to cracc. Then again, it takes something hard to cracc the coconut.";
     }
     else if (randomnum > 34)
     {
@@ -60,7 +60,7 @@ function postMessage() {
     }
     else if (randomnum > 33)
     {
-        botResponse = "Some coconuts have thicker shells than others.";
+        botResponse = "Some coconuts have thiccer shells than others.";
     }
     else if (randomnum > 32)
     {
@@ -104,7 +104,7 @@ function postMessage() {
     }
     else if (randomnum > 22)
     {
-        botResponse = "If you’re walking on a beach, and you step on a crab, even if you didn’t mean to, you should go back and apologize. After all, that crab could be in your soup later on.";
+        botResponse = "If you’re walking on a beach, and you step on a crab, even if you didn’t mean to, you should go bacc and apologize. After all, that crab could be in your soup later on.";
     }
     else if (randomnum > 21)
     {
@@ -156,11 +156,11 @@ function postMessage() {
     }
     else if (randomnum > 9)
     {
-        botResponse = "He who carves himself in stone, has rocks in his head.";
+        botResponse = "He who carves himself in stone, has roccs in his head.";
     }
     else if (randomnum > 8)
     {
-        botResponse = "Blood is thicker than water, but not as refreshing.";
+        botResponse = "Blood is thiccer than water, but not as refreshing.";
     }
     else if (randomnum > 7)
     {
